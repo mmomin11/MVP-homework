@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="asset/styles.css">
     <script src="java.js"></script>
 
     <title>Password Generator</title>
 </head>
+
 <body>
-<!-- create head container with arow for  header that says "Generate a Password" -->
-<div class="container">
-    <div class="row">
-      <h3>Generate a Password</h3>
+<!--This is the wrapper container with all of the content-->
+<div id="wrapper">
+    <header>
+        <h1>Password Generator</h1>
+    </header>
+    <!--This is the content that will show on page-->
+    <div id="content">
+        <h2>Generate a Password</h2>
+        <!-- creat line break -->
+        <hr>
+        <!-- tet area where the password will be displayed-->
+        <textarea readonly id="password" placeholder="Your Secure Password"
+            aria-label="Generated Password"></textarea>
+        <hr>
+        <!-- Create a button for the prompts -->
+        <div id="btn">
+            <!-- This is the generate password button -->
+            <button id="generate">Generate
+                Password</button>
+
+
+        </div>
     </div>
-    
-
-<!-- include a line break -->
-<div>
-        <hr class="linebreak">
-    </div>
-<!-- create another  row within the container that will show to the generated password. This will have dotted border with Your Secure Password centered intially-->
-
-<!-- incldue another line break -->
-
-<!-- another row with the button to generate a password.  -->
-
 </div>
 
 </body>
+
 </html>
