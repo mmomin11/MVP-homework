@@ -14,6 +14,7 @@ number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
 // create a variable that change lower case to upper case letters for password
+var alphabet2 = alphabet.map(toUpper);
 
 // function to convert the letters to uppercase
 
