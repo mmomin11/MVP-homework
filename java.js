@@ -49,6 +49,7 @@ else {
     confirmNumber = confirm("Will this contain numbers?");
     confirmLowercase = confirm("Will this contain Lowercase letters?");
     confirmCharacter = confirm("Will this contain special characters?");
+    confirmUppercase = confirm("Will this contain Uppercase letters");
 }
 // another control flow for the scenarios they select
     // if they select "no" for all the questions
