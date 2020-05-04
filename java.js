@@ -50,9 +50,13 @@ else {
     confirmLowercase = confirm("Will this contain Lowercase letters?");
     confirmCharacter = confirm("Will this contain special characters?");
     confirmUppercase = confirm("Will this contain Uppercase letters");
-}
+};
 // another control flow for the scenarios they select
     // if they select "no" for all the questions
+if (!confirmCharacter && !confirmLowercase && !confirmNumber && !confirmUppercase) {
+    alert("You need to select at least one criteria");
+    
+}
     // option 1 (yes to all option)
     // option 2 (yes to only three options)
     // option 3 (yes to two options)
