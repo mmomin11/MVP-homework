@@ -36,12 +36,18 @@ function generatePassword() {
 if (!enter) {
     alert("This needs a value");
 } else if (enter < 8 || enter > 128) {
+
+  // alert if they choose a number less than 8 or greater than 128.  
     enter = parseInt(prompt("You must choose between 8 and 128"));
 
 }
-// alert if they choose a number less than 8 or greater than 128.
+
 // next questions if the proper value is inputted. Use confirm to ask the series of questions. 
 
+else {
+    // Continues once user input is validated
+    confirmNumber = confirm("Will this contain numbers?");
+}
 // another control flow for the scenarios they select
     // if they select "no" for all the questions
     // option 1 (yes to all option)
@@ -54,4 +60,4 @@ if (!enter) {
 // turn result into string
 
 // put result into the textbox
-
+}
