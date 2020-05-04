@@ -4,7 +4,7 @@ var confirmCharacter;
 var confirmNumber;
 var confirmUppercase;
 var confirmLowercase;
-var choices;
+var choice;
 
 // create variable values for the prompts. 
 // Create an array for the Special characters
@@ -55,7 +55,7 @@ else {
 // another control flow for the scenarios they select
     // if they select "no" for all the questions
 if (!confirmCharacter && !confirmLowercase && !confirmNumber && !confirmUppercase) {
-    choices = alert("You need to select at least one criteria");
+    choice = alert("You need to select at least one criteria");
     
 }
     // option 1 (yes to all option)
@@ -122,8 +122,8 @@ if (!confirmCharacter && !confirmLowercase && !confirmNumber && !confirmUppercas
 var password = [];
 
 for (var i = 0; i < enter; i++) {
-    var choicePicked = choice[Math.floor(Math.random () * choice.length)];
-    push(choicePicked);
+    var choicePicked = choice[Math.floor(Math.random() * choice.length)];
+    password.push(choicePicked);
 }
 
 // turn result into string
