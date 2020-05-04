@@ -132,4 +132,7 @@ UserInput(ps);
 return ps;
 }
 // put result into the textbox
+function UserInput(ps) {
+    document.getElementById("password").textContent = ps;
 
+}
