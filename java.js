@@ -21,6 +21,12 @@ var toUpper = function (x) {
 var alphabet2 = alphabet.map(toUpper);
 
 // function in generating password
+var get = document.querySelector("#generate");
+
+get.addEventListener("click", function () {
+    ps = generatePassword();
+    document.getElementById("password").placeholder = ps;
+});
 
 // create first prompt for user to review about how many characters (8-128)
 // make sure they select a number to place in the field. 
