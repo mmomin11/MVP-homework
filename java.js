@@ -118,10 +118,12 @@ if (!confirmCharacter && !confirmLowercase && !confirmNumber && !confirmUppercas
     else if (confirmUppercase) {
         choices = space.concat(alphabet2);
     };
-// random selection of the following arrays. 
+// random selection of the following arrays.
+var password = [];
+
 for (var i = 0; i < enter; i++) {
     var choicePicked = choice[Math.floor(Math.random () * choice.length)];
-    push(choicePicked);
+    password.push(choicePicked);
 }
 
 // turn result into string
