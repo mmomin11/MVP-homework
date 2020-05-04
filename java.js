@@ -119,6 +119,10 @@ if (!confirmCharacter && !confirmLowercase && !confirmNumber && !confirmUppercas
         choices = space.concat(alphabet2);
     };
 // random selection of the following arrays. 
+for (var i = 0; i < enter; i++) {
+    var choicePicked = choice[Math.floor(Math.random () * choice.length)];
+    push(choicePicked);
+}
 
 // turn result into string
 
