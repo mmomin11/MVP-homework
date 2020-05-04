@@ -9,6 +9,7 @@ var confirmLowercase;
 // Create an array for the Special characters
 character = ["!", "@", "#", "$", "&", "%", " ^ ", "*", "(", ")", "+", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "'", "[", "\\", "]", " { ", "_", "`", "|", "}", "~"];
 // create array for numbers
+number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 // create array for letters
 
 // create a variable that change lower case to upper case letters for password
