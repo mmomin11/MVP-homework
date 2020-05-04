@@ -63,7 +63,21 @@ if (!confirmCharacter && !confirmLowercase && !confirmNumber && !confirmUppercas
         choice = character.concat(number, alphabet, alphabet2);
     }
     // option 2 (yes to only three options)
+    else if (confirmCharacter && confirmLowercase && confirmNumber) {
+        choice = character.concat(alphabet, number);
+    }
     
+    else if (confirmCharacter && confirmLowercase && confirmUppercase) {
+        choice = character.concat(alphabet, alphabet2);
+    }
+
+    else if (confirmCharacter && confirmNumber && confirmUppercase) {
+        choice = character.concat(number, alphabet2);
+    }
+
+    else if (confirmLowercase && confirmNumber && confirmUppercase) {
+        choice = alp.concat(number, alphabet2);
+    }
     // option 3 (yes to two options)
     // option 4 (yes to one option)
 
