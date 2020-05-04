@@ -4,6 +4,7 @@ var confirmCharacter;
 var confirmNumber;
 var confirmUppercase;
 var confirmLowercase;
+var choices;
 
 // create variable values for the prompts. 
 // Create an array for the Special characters
@@ -54,11 +55,15 @@ else {
 // another control flow for the scenarios they select
     // if they select "no" for all the questions
 if (!confirmCharacter && !confirmLowercase && !confirmNumber && !confirmUppercase) {
-    alert("You need to select at least one criteria");
+    choices = alert("You need to select at least one criteria");
     
 }
     // option 1 (yes to all option)
+    else if (confirmCharacter && confirmLowercase && confirmNumber && confirmUppercase) {
+        choice = character.concat(number, alphabet, alphabet2);
+    }
     // option 2 (yes to only three options)
+    
     // option 3 (yes to two options)
     // option 4 (yes to one option)
 
