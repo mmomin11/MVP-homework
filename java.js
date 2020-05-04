@@ -76,7 +76,7 @@ if (!confirmCharacter && !confirmLowercase && !confirmNumber && !confirmUppercas
     }
 
     else if (confirmLowercase && confirmNumber && confirmUppercase) {
-        choice = alp.concat(number, alphabet2);
+        choice = alphabet.concat(number, alphabet2);
     }
     // option 3 (yes to two options)
     else if (confirmCharacter && confirmNumber) {
@@ -103,7 +103,21 @@ if (!confirmCharacter && !confirmLowercase && !confirmNumber && !confirmUppercas
         choice = alphabet.concat(alphabet2);
     }
     // option 4 (yes to one option)
+    else if (confirmCharacter) {
+        choice = character;
+    }
 
+    else if (confirmNumber) {
+        choice = number;
+    }
+
+    else if (confirmLowercase) {
+        choice = alphabet;
+    }
+
+    else if (confirmUppercase) {
+        choice = alphabet2;
+    }
 // random selection of the following arrays. 
 
 // turn result into string
