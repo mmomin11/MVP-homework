@@ -116,8 +116,8 @@ if (!confirmCharacter && !confirmLowercase && !confirmNumber && !confirmUppercas
     }
 
     else if (confirmUppercase) {
-        choice = alphabet2;
-    }
+        choices = space.concat(alphabet2);
+    };
 // random selection of the following arrays. 
 
 // turn result into string
