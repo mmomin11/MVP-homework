@@ -29,6 +29,9 @@ get.addEventListener("click", function () {
 });
 
 // create first prompt for user to review about how many characters (8-128)
+function generatePassword() {
+    enter = parseInt(prompt("How many characters would you like your password? Choose between 8 and 128"))};
+
 // make sure they select a number to place in the field. 
 // alert if they choose a number less than 8 or greater than 128.
 // next questions if the proper value is inputted. Use confirm to ask the series of questions. 
