@@ -7,6 +7,7 @@ var confirmLowercase;
 
 // create variable values for the prompts. 
 // Create an array for the Special characters
+character = ["!", "@", "#", "$", "&", "%", " ^ ", "*", "(", ")", "+", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "'", "[", "\\", "]", " { ", "_", "`", "|", "}", "~"];
 // create array for numbers
 // create array for letters
 
