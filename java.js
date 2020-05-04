@@ -47,6 +47,7 @@ if (!enter) {
 else {
     // Continues once user input is validated
     confirmNumber = confirm("Will this contain numbers?");
+    confirmLowercase = confirm("Will this contain Lowercase letters?");
 }
 // another control flow for the scenarios they select
     // if they select "no" for all the questions
