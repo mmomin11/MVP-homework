@@ -79,6 +79,29 @@ if (!confirmCharacter && !confirmLowercase && !confirmNumber && !confirmUppercas
         choice = alp.concat(number, alphabet2);
     }
     // option 3 (yes to two options)
+    else if (confirmCharacter && confirmNumber) {
+        choice = character.concat(number);
+    }
+
+    else if (confirmCharacter && confirmLowercase) {
+        choice = character.concat(alphabet);
+    }
+
+    else if (confirmCharacter && confirmUppercase) {
+        choice = character.concat(alphabet2);
+    }
+
+    else if (confirmNumber && confirmLowercase) {
+        choice = number.concat(alphabet);
+    }
+
+    else if (confirmNumber && confirmUppercase) {
+        choice = number.concat(alphabet2);
+    }
+
+    else if (confirmLowercase && confirmUppercase) {
+        choice = alphabet.concat(alphabet2);
+    }
     // option 4 (yes to one option)
 
 // random selection of the following arrays. 
